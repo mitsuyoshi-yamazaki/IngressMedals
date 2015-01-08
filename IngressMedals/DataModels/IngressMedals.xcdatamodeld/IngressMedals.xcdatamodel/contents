@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6735" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="IMData" representedClassName="IMData" isAbstract="YES" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" syncable="YES"/>
+        <attribute name="deletedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="IMEvent" representedClassName="IMEvent" parentEntity="IMData" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="objective" maxCount="1" deletionRule="Nullify" destinationEntity="IMObjective" inverseName="events" inverseEntity="IMObjective" syncable="YES"/>
+    </entity>
+    <entity name="IMMedal" representedClassName="IMMedal" parentEntity="IMData" syncable="YES">
+        <attribute name="achievedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="objective" maxCount="1" deletionRule="Nullify" destinationEntity="IMObjective" inverseName="medals" inverseEntity="IMObjective" syncable="YES"/>
+    </entity>
+    <entity name="IMObjective" representedClassName="IMObjective" parentEntity="IMData" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMEvent" inverseName="objective" inverseEntity="IMEvent" syncable="YES"/>
+        <relationship name="medals" toMany="YES" minCount="6" maxCount="6" deletionRule="Nullify" ordered="YES" destinationEntity="IMMedal" inverseName="objective" inverseEntity="IMMedal" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="IMData" positionX="-54" positionY="9" width="128" height="103"/>
+        <element name="IMEvent" positionX="-63" positionY="54" width="128" height="90"/>
+        <element name="IMMedal" positionX="-54" positionY="18" width="128" height="135"/>
+        <element name="IMObjective" positionX="-63" positionY="-18" width="128" height="118"/>
+    </elements>
+</model>
