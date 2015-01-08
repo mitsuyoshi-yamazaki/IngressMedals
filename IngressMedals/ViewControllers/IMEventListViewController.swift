@@ -8,23 +8,6 @@
 
 import UIKit
 
-class IMEventCell: UITableViewCell {
-	
-	@IBOutlet weak private var medalContainerView: UIView!
-	@IBOutlet weak private var titleLabel: UILabel!
-
-	internal var medalView: IMMedalView!
-	
-	override func awakeFromNib() {
-		super.awakeFromNib()
-		
-		self.medalView = IMMedalView.instantiateFromNib() as IMMedalView
-		self.medalView.frame = self.medalContainerView.bounds
-		self.medalView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
-		self.medalContainerView.addSubview(self.medalView)
-	}
-}
-
 class IMEventListViewController: IMObjectiveBasedViewController, NSFetchedResultsControllerDelegate {
 
 	private var fetchedResultsController: NSFetchedResultsController!
@@ -37,6 +20,8 @@ class IMEventListViewController: IMObjectiveBasedViewController, NSFetchedResult
 		
 		let predicate = NSPredicate(format: "(objective = %@) AND (deletedAt = NULL)", self.objective)
 		self.fetchedResultsController = IMEvent.MR_fetchAllSortedBy("progress", ascending: true, withPredicate: predicate, groupBy: nil, delegate: self)	// TODO: メダルによるグルーピング
+		
+		IMMedalTableViewCell.registerTo(self.tableView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,7 +42,7 @@ class IMEventListViewController: IMObjectiveBasedViewController, NSFetchedResult
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		
-		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as IMEventCell
+		let cell = tableView.dequeueReusableCellWithIdentifier(IMMedalTableViewCell.className, forIndexPath: indexPath) as IMMedalTableViewCell
 		let event = self.fetchedResultsController.objectAtIndexPath(indexPath) as IMEvent
 		
 		cell.medalView.setEvent(event)

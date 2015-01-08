@@ -34,6 +34,9 @@
 		2C75475B1A5D9A1F004749A0 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C75475A1A5D9A1F004749A0 /* background@2x.png */; };
 		2C75475D1A5DA118004749A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75475C1A5DA118004749A0 /* QuartzCore.framework */; };
 		2C75475F1A5DABB5004749A0 /* locked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C75475E1A5DABB5004749A0 /* locked@2x.png */; };
+		2C936EAD1A5E74EE00D88D31 /* IMMedalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C936EAC1A5E74EE00D88D31 /* IMMedalTableViewCell.swift */; };
+		2C936EAF1A5E74FA00D88D31 /* IMMedalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C936EAE1A5E74FA00D88D31 /* IMMedalTableViewCell.xib */; };
+		2C936EB11A5E757000D88D31 /* UITableViewCellAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C936EB01A5E757000D88D31 /* UITableViewCellAdditions.swift */; };
 		2CDB48BE1A58E8F80095A147 /* IMAddObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48BD1A58E8F80095A147 /* IMAddObjectiveViewController.swift */; };
 		2CDB48C11A58EDCA0095A147 /* _IMMedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48BF1A58EDCA0095A147 /* _IMMedal.swift */; };
 		2CDB48C21A58EDCA0095A147 /* IMMedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48C01A58EDCA0095A147 /* IMMedal.swift */; };
@@ -89,6 +92,9 @@
 		2C75475A1A5D9A1F004749A0 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		2C75475C1A5DA118004749A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2C75475E1A5DABB5004749A0 /* locked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked@2x.png"; sourceTree = "<group>"; };
+		2C936EAC1A5E74EE00D88D31 /* IMMedalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMedalTableViewCell.swift; sourceTree = "<group>"; };
+		2C936EAE1A5E74FA00D88D31 /* IMMedalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMMedalTableViewCell.xib; sourceTree = "<group>"; };
+		2C936EB01A5E757000D88D31 /* UITableViewCellAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellAdditions.swift; sourceTree = "<group>"; };
 		2CDB48BD1A58E8F80095A147 /* IMAddObjectiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMAddObjectiveViewController.swift; sourceTree = "<group>"; };
 		2CDB48BF1A58EDCA0095A147 /* _IMMedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _IMMedal.swift; sourceTree = "<group>"; };
 		2CDB48C01A58EDCA0095A147 /* IMMedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMedal.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				2C4C43781A5A9B59006A676A /* UIViewControllerAdditions.swift */,
 				2CDB48C71A592B430095A147 /* NSManagedObjectAdditions.swift */,
 				2C6FE4441A5DC278006E352A /* UIViewAdditions.swift */,
+				2C936EB01A5E757000D88D31 /* UITableViewCellAdditions.swift */,
 				2C32474D1A58E6D000760A35 /* Legacy */,
 			);
 			path = Utilities;
@@ -168,6 +175,8 @@
 				2C6FE4401A5DBAA4006E352A /* IMEventListViewController.swift */,
 				2C6FE43C1A5DBA6C006E352A /* IMMedalView.swift */,
 				2C6FE43E1A5DBA78006E352A /* IMMedalView.xib */,
+				2C936EAC1A5E74EE00D88D31 /* IMMedalTableViewCell.swift */,
+				2C936EAE1A5E74FA00D88D31 /* IMMedalTableViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,6 +370,7 @@
 			files = (
 				2C75475F1A5DABB5004749A0 /* locked@2x.png in Resources */,
 				2C46EFC11A500C3C002D70E9 /* Main.storyboard in Resources */,
+				2C936EAF1A5E74FA00D88D31 /* IMMedalTableViewCell.xib in Resources */,
 				2C6FE43F1A5DBA78006E352A /* IMMedalView.xib in Resources */,
 				2C46EFC61A500C3C002D70E9 /* LaunchScreen.xib in Resources */,
 				2C75475B1A5D9A1F004749A0 /* background@2x.png in Resources */,
@@ -431,6 +441,7 @@
 				2C6FE43D1A5DBA6C006E352A /* IMMedalView.swift in Sources */,
 				2C4C43771A5A9A1F006A676A /* IMObjectiveViewController.swift in Sources */,
 				2C32474C1A58E4BA00760A35 /* IMObjectiveListViewController.swift in Sources */,
+				2C936EB11A5E757000D88D31 /* UITableViewCellAdditions.swift in Sources */,
 				2C4C437F1A5A9B80006A676A /* UIViewController+WCAdditions.m in Sources */,
 				2C3247471A58E47E00760A35 /* _IMData.swift in Sources */,
 				2CDB48C11A58EDCA0095A147 /* _IMMedal.swift in Sources */,
@@ -445,6 +456,7 @@
 				2C4C43751A5932C6006A676A /* UIColor+WCAdditions.m in Sources */,
 				2C6FE4411A5DBAA4006E352A /* IMEventListViewController.swift in Sources */,
 				2C32474A1A58E47E00760A35 /* IMObjective.swift in Sources */,
+				2C936EAD1A5E74EE00D88D31 /* IMMedalTableViewCell.swift in Sources */,
 				2C3247481A58E47E00760A35 /* _IMObjective.swift in Sources */,
 				2CDB48C81A592B430095A147 /* NSManagedObjectAdditions.swift in Sources */,
 				2C6FE4451A5DC278006E352A /* UIViewAdditions.swift in Sources */,

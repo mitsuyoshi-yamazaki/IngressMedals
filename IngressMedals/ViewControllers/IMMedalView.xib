@@ -102,13 +102,13 @@
                     <exclude reference="XzC-sh-iNU"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="40g-tY-FPb"/>
+                    <exclude reference="ASw-eY-BLU"/>
+                    <exclude reference="ep9-a0-T52"/>
                     <exclude reference="OKg-17-Gbc"/>
                     <exclude reference="SCU-3H-PI7"/>
                     <exclude reference="iK5-xn-hSX"/>
                     <exclude reference="mnj-tA-MXE"/>
-                    <exclude reference="40g-tY-FPb"/>
-                    <exclude reference="ASw-eY-BLU"/>
-                    <exclude reference="ep9-a0-T52"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -117,13 +117,13 @@
                     <include reference="XzC-sh-iNU"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="40g-tY-FPb"/>
+                    <include reference="ASw-eY-BLU"/>
+                    <include reference="ep9-a0-T52"/>
                     <include reference="OKg-17-Gbc"/>
                     <include reference="SCU-3H-PI7"/>
                     <include reference="iK5-xn-hSX"/>
                     <include reference="mnj-tA-MXE"/>
-                    <include reference="40g-tY-FPb"/>
-                    <include reference="ASw-eY-BLU"/>
-                    <include reference="ep9-a0-T52"/>
                 </mask>
             </variation>
             <connections>
