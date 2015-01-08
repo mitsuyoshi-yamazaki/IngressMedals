@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3247421A58E45F00760A35 /* IngressMedals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C32473D1A58E45F00760A35 /* IngressMedals.xcdatamodeld */; };
+		2C3247471A58E47E00760A35 /* _IMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3247431A58E47E00760A35 /* _IMData.swift */; };
+		2C3247481A58E47E00760A35 /* _IMObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3247441A58E47E00760A35 /* _IMObjective.swift */; };
+		2C3247491A58E47E00760A35 /* IMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3247451A58E47E00760A35 /* IMData.swift */; };
+		2C32474A1A58E47E00760A35 /* IMObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3247461A58E47E00760A35 /* IMObjective.swift */; };
+		2C32474C1A58E4BA00760A35 /* IMObjectiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32474B1A58E4BA00760A35 /* IMObjectiveListViewController.swift */; };
+		2C46EFB91A500C3C002D70E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46EFB81A500C3C002D70E9 /* AppDelegate.swift */; };
+		2C46EFC11A500C3C002D70E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C46EFBF1A500C3C002D70E9 /* Main.storyboard */; };
+		2C46EFC31A500C3C002D70E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C46EFC21A500C3C002D70E9 /* Images.xcassets */; };
+		2C46EFC61A500C3C002D70E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46EFC41A500C3C002D70E9 /* LaunchScreen.xib */; };
+		2C46EFD21A500C3D002D70E9 /* IngressMedalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46EFD11A500C3D002D70E9 /* IngressMedalsTests.swift */; };
+		2C4C43751A5932C6006A676A /* UIColor+WCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C43741A5932C6006A676A /* UIColor+WCAdditions.m */; };
+		2C4C43771A5A9A1F006A676A /* IMObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C43761A5A9A1F006A676A /* IMObjectiveViewController.swift */; };
+		2C4C43791A5A9B59006A676A /* UIViewControllerAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C43781A5A9B59006A676A /* UIViewControllerAdditions.swift */; };
+		2C4C437E1A5A9B80006A676A /* UIStoryboard+WCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C437B1A5A9B80006A676A /* UIStoryboard+WCAdditions.m */; };
+		2C4C437F1A5A9B80006A676A /* UIViewController+WCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C437D1A5A9B80006A676A /* UIViewController+WCAdditions.m */; };
+		2C6FE4371A5DB560006E352A /* IMAddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4361A5DB560006E352A /* IMAddEventViewController.swift */; };
+		2C6FE43A1A5DB8BB006E352A /* _IMEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4381A5DB8BB006E352A /* _IMEvent.swift */; };
+		2C6FE43B1A5DB8BB006E352A /* IMEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4391A5DB8BB006E352A /* IMEvent.swift */; };
+		2C6FE43D1A5DBA6C006E352A /* IMMedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE43C1A5DBA6C006E352A /* IMMedalView.swift */; };
+		2C6FE43F1A5DBA78006E352A /* IMMedalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FE43E1A5DBA78006E352A /* IMMedalView.xib */; };
+		2C6FE4411A5DBAA4006E352A /* IMEventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4401A5DBAA4006E352A /* IMEventListViewController.swift */; };
+		2C6FE4431A5DBB44006E352A /* IMObjectiveBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4421A5DBB44006E352A /* IMObjectiveBasedViewController.swift */; };
+		2C6FE4451A5DC278006E352A /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FE4441A5DC278006E352A /* UIViewAdditions.swift */; };
+		2C75475B1A5D9A1F004749A0 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C75475A1A5D9A1F004749A0 /* background@2x.png */; };
+		2C75475D1A5DA118004749A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75475C1A5DA118004749A0 /* QuartzCore.framework */; };
+		2C75475F1A5DABB5004749A0 /* locked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C75475E1A5DABB5004749A0 /* locked@2x.png */; };
+		2CDB48BE1A58E8F80095A147 /* IMAddObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48BD1A58E8F80095A147 /* IMAddObjectiveViewController.swift */; };
+		2CDB48C11A58EDCA0095A147 /* _IMMedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48BF1A58EDCA0095A147 /* _IMMedal.swift */; };
+		2CDB48C21A58EDCA0095A147 /* IMMedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48C01A58EDCA0095A147 /* IMMedal.swift */; };
+		2CDB48C51A58EF0B0095A147 /* NSObjectAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48C31A58EF0B0095A147 /* NSObjectAdditions.swift */; };
+		2CDB48C61A58EF0B0095A147 /* UIColorAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48C41A58EF0B0095A147 /* UIColorAdditions.swift */; };
+		2CDB48C81A592B430095A147 /* NSManagedObjectAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB48C71A592B430095A147 /* NSManagedObjectAdditions.swift */; };
+		5DC0F32FB40FE93A80B833D7 /* libPods-IngressMedals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E626CB26D377D5AE0865ECE8 /* libPods-IngressMedals.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C46EFCC1A500C3D002D70E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C46EFAB1A500C3C002D70E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C46EFB21A500C3C002D70E9;
+			remoteInfo = IngressMedals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C32473E1A58E45F00760A35 /* IngressMedals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IngressMedals.xcdatamodel; sourceTree = "<group>"; };
+		2C3247431A58E47E00760A35 /* _IMData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _IMData.swift; sourceTree = "<group>"; };
+		2C3247441A58E47E00760A35 /* _IMObjective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _IMObjective.swift; sourceTree = "<group>"; };
+		2C3247451A58E47E00760A35 /* IMData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMData.swift; sourceTree = "<group>"; };
+		2C3247461A58E47E00760A35 /* IMObjective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMObjective.swift; sourceTree = "<group>"; };
+		2C32474B1A58E4BA00760A35 /* IMObjectiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMObjectiveListViewController.swift; sourceTree = "<group>"; };
+		2C32474E1A58E6EB00760A35 /* IngressMedals-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IngressMedals-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C46EFB31A500C3C002D70E9 /* IngressMedals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngressMedals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C46EFB71A500C3C002D70E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C46EFB81A500C3C002D70E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C46EFC01A500C3C002D70E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C46EFC21A500C3C002D70E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C46EFC51A500C3C002D70E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2C46EFCB1A500C3D002D70E9 /* IngressMedalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngressMedalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C46EFD01A500C3D002D70E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C46EFD11A500C3D002D70E9 /* IngressMedalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngressMedalsTests.swift; sourceTree = "<group>"; };
+		2C4C43731A5932C6006A676A /* UIColor+WCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WCAdditions.h"; sourceTree = "<group>"; };
+		2C4C43741A5932C6006A676A /* UIColor+WCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WCAdditions.m"; sourceTree = "<group>"; };
+		2C4C43761A5A9A1F006A676A /* IMObjectiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMObjectiveViewController.swift; sourceTree = "<group>"; };
+		2C4C43781A5A9B59006A676A /* UIViewControllerAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerAdditions.swift; sourceTree = "<group>"; };
+		2C4C437A1A5A9B80006A676A /* UIStoryboard+WCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+WCAdditions.h"; sourceTree = "<group>"; };
+		2C4C437B1A5A9B80006A676A /* UIStoryboard+WCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+WCAdditions.m"; sourceTree = "<group>"; };
+		2C4C437C1A5A9B80006A676A /* UIViewController+WCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WCAdditions.h"; sourceTree = "<group>"; };
+		2C4C437D1A5A9B80006A676A /* UIViewController+WCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WCAdditions.m"; sourceTree = "<group>"; };
+		2C6FE4361A5DB560006E352A /* IMAddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMAddEventViewController.swift; sourceTree = "<group>"; };
+		2C6FE4381A5DB8BB006E352A /* _IMEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _IMEvent.swift; sourceTree = "<group>"; };
+		2C6FE4391A5DB8BB006E352A /* IMEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMEvent.swift; sourceTree = "<group>"; };
+		2C6FE43C1A5DBA6C006E352A /* IMMedalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMedalView.swift; sourceTree = "<group>"; };
+		2C6FE43E1A5DBA78006E352A /* IMMedalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMMedalView.xib; sourceTree = "<group>"; };
+		2C6FE4401A5DBAA4006E352A /* IMEventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMEventListViewController.swift; sourceTree = "<group>"; };
+		2C6FE4421A5DBB44006E352A /* IMObjectiveBasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMObjectiveBasedViewController.swift; sourceTree = "<group>"; };
+		2C6FE4441A5DC278006E352A /* UIViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
+		2C75475A1A5D9A1F004749A0 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		2C75475C1A5DA118004749A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C75475E1A5DABB5004749A0 /* locked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked@2x.png"; sourceTree = "<group>"; };
+		2CDB48BD1A58E8F80095A147 /* IMAddObjectiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMAddObjectiveViewController.swift; sourceTree = "<group>"; };
+		2CDB48BF1A58EDCA0095A147 /* _IMMedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _IMMedal.swift; sourceTree = "<group>"; };
+		2CDB48C01A58EDCA0095A147 /* IMMedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMedal.swift; sourceTree = "<group>"; };
+		2CDB48C31A58EF0B0095A147 /* NSObjectAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectAdditions.swift; sourceTree = "<group>"; };
+		2CDB48C41A58EF0B0095A147 /* UIColorAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorAdditions.swift; sourceTree = "<group>"; };
+		2CDB48C71A592B430095A147 /* NSManagedObjectAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectAdditions.swift; sourceTree = "<group>"; };
+		37B37ECA94332623EF31A630 /* Pods-IngressMedals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngressMedals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IngressMedals/Pods-IngressMedals.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DFC4D77817F9A1142CBADB /* Pods-IngressMedals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngressMedals.release.xcconfig"; path = "Pods/Target Support Files/Pods-IngressMedals/Pods-IngressMedals.release.xcconfig"; sourceTree = "<group>"; };
+		E626CB26D377D5AE0865ECE8 /* libPods-IngressMedals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IngressMedals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C46EFB01A500C3C002D70E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C75475D1A5DA118004749A0 /* QuartzCore.framework in Frameworks */,
+				5DC0F32FB40FE93A80B833D7 /* libPods-IngressMedals.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C46EFC81A500C3D002D70E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C32473C1A58E45F00760A35 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2C32473D1A58E45F00760A35 /* IngressMedals.xcdatamodeld */,
+				2C32473F1A58E45F00760A35 /* ManagedObjects */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		2C32473F1A58E45F00760A35 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2C3247431A58E47E00760A35 /* _IMData.swift */,
+				2C3247441A58E47E00760A35 /* _IMObjective.swift */,
+				2C6FE4381A5DB8BB006E352A /* _IMEvent.swift */,
+				2CDB48BF1A58EDCA0095A147 /* _IMMedal.swift */,
+				2C3247451A58E47E00760A35 /* IMData.swift */,
+				2C3247461A58E47E00760A35 /* IMObjective.swift */,
+				2C6FE4391A5DB8BB006E352A /* IMEvent.swift */,
+				2CDB48C01A58EDCA0095A147 /* IMMedal.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		2C3247401A58E45F00760A35 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2CDB48C31A58EF0B0095A147 /* NSObjectAdditions.swift */,
+				2CDB48C41A58EF0B0095A147 /* UIColorAdditions.swift */,
+				2C4C43781A5A9B59006A676A /* UIViewControllerAdditions.swift */,
+				2CDB48C71A592B430095A147 /* NSManagedObjectAdditions.swift */,
+				2C6FE4441A5DC278006E352A /* UIViewAdditions.swift */,
+				2C32474D1A58E6D000760A35 /* Legacy */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C3247411A58E45F00760A35 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C32474B1A58E4BA00760A35 /* IMObjectiveListViewController.swift */,
+				2C6FE4421A5DBB44006E352A /* IMObjectiveBasedViewController.swift */,
+				2CDB48BD1A58E8F80095A147 /* IMAddObjectiveViewController.swift */,
+				2C6FE4361A5DB560006E352A /* IMAddEventViewController.swift */,
+				2C4C43761A5A9A1F006A676A /* IMObjectiveViewController.swift */,
+				2C6FE4401A5DBAA4006E352A /* IMEventListViewController.swift */,
+				2C6FE43C1A5DBA6C006E352A /* IMMedalView.swift */,
+				2C6FE43E1A5DBA78006E352A /* IMMedalView.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C32474D1A58E6D000760A35 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C43731A5932C6006A676A /* UIColor+WCAdditions.h */,
+				2C4C43741A5932C6006A676A /* UIColor+WCAdditions.m */,
+				2C4C437A1A5A9B80006A676A /* UIStoryboard+WCAdditions.h */,
+				2C4C437B1A5A9B80006A676A /* UIStoryboard+WCAdditions.m */,
+				2C4C437C1A5A9B80006A676A /* UIViewController+WCAdditions.h */,
+				2C4C437D1A5A9B80006A676A /* UIViewController+WCAdditions.m */,
+				2C32474E1A58E6EB00760A35 /* IngressMedals-Bridging-Header.h */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		2C46EFAA1A500C3C002D70E9 = {
+			isa = PBXGroup;
+			children = (
+				2C46EFB51A500C3C002D70E9 /* IngressMedals */,
+				2C46EFCE1A500C3D002D70E9 /* IngressMedalsTests */,
+				2C46EFB41A500C3C002D70E9 /* Products */,
+				761C210EBF7BB5731AF36983 /* Pods */,
+				66F5B52AAC72F426A0CB5758 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C46EFB41A500C3C002D70E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C46EFB31A500C3C002D70E9 /* IngressMedals.app */,
+				2C46EFCB1A500C3D002D70E9 /* IngressMedalsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C46EFB51A500C3C002D70E9 /* IngressMedals */ = {
+			isa = PBXGroup;
+			children = (
+				2C46EFB81A500C3C002D70E9 /* AppDelegate.swift */,
+				2C46EFBF1A500C3C002D70E9 /* Main.storyboard */,
+				2C46EFC21A500C3C002D70E9 /* Images.xcassets */,
+				2C46EFC41A500C3C002D70E9 /* LaunchScreen.xib */,
+				2C3247411A58E45F00760A35 /* ViewControllers */,
+				2C32473C1A58E45F00760A35 /* DataModels */,
+				2C3247401A58E45F00760A35 /* Utilities */,
+				2C7547591A5D9A15004749A0 /* Images */,
+				2C46EFB61A500C3C002D70E9 /* Supporting Files */,
+			);
+			path = IngressMedals;
+			sourceTree = "<group>";
+		};
+		2C46EFB61A500C3C002D70E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C46EFB71A500C3C002D70E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C46EFCE1A500C3D002D70E9 /* IngressMedalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C46EFD11A500C3D002D70E9 /* IngressMedalsTests.swift */,
+				2C46EFCF1A500C3D002D70E9 /* Supporting Files */,
+			);
+			path = IngressMedalsTests;
+			sourceTree = "<group>";
+		};
+		2C46EFCF1A500C3D002D70E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C46EFD01A500C3D002D70E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C7547591A5D9A15004749A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C75475A1A5D9A1F004749A0 /* background@2x.png */,
+				2C75475E1A5DABB5004749A0 /* locked@2x.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		66F5B52AAC72F426A0CB5758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C75475C1A5DA118004749A0 /* QuartzCore.framework */,
+				E626CB26D377D5AE0865ECE8 /* libPods-IngressMedals.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		761C210EBF7BB5731AF36983 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B37ECA94332623EF31A630 /* Pods-IngressMedals.debug.xcconfig */,
+				A5DFC4D77817F9A1142CBADB /* Pods-IngressMedals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C46EFB21A500C3C002D70E9 /* IngressMedals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C46EFD51A500C3D002D70E9 /* Build configuration list for PBXNativeTarget "IngressMedals" */;
+			buildPhases = (
+				CAD8247ED89171E73A2EF968 /* Check Pods Manifest.lock */,
+				2C46EFAF1A500C3C002D70E9 /* Sources */,
+				2C46EFB01A500C3C002D70E9 /* Frameworks */,
+				2C46EFB11A500C3C002D70E9 /* Resources */,
+				1B90274A8997936E334227BB /* Copy Pods Resources */,
+				2C46EFDB1A55430C002D70E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IngressMedals;
+			productName = IngressMedals;
+			productReference = 2C46EFB31A500C3C002D70E9 /* IngressMedals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C46EFCA1A500C3D002D70E9 /* IngressMedalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C46EFD81A500C3D002D70E9 /* Build configuration list for PBXNativeTarget "IngressMedalsTests" */;
+			buildPhases = (
+				2C46EFC71A500C3D002D70E9 /* Sources */,
+				2C46EFC81A500C3D002D70E9 /* Frameworks */,
+				2C46EFC91A500C3D002D70E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C46EFCD1A500C3D002D70E9 /* PBXTargetDependency */,
+			);
+			name = IngressMedalsTests;
+			productName = IngressMedalsTests;
+			productReference = 2C46EFCB1A500C3D002D70E9 /* IngressMedalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C46EFAB1A500C3C002D70E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IM;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Mitsuyoshi;
+				TargetAttributes = {
+					2C46EFB21A500C3C002D70E9 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2C46EFCA1A500C3D002D70E9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2C46EFB21A500C3C002D70E9;
+					};
+				};
+			};
+			buildConfigurationList = 2C46EFAE1A500C3C002D70E9 /* Build configuration list for PBXProject "IngressMedals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C46EFAA1A500C3C002D70E9;
+			productRefGroup = 2C46EFB41A500C3C002D70E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C46EFB21A500C3C002D70E9 /* IngressMedals */,
+				2C46EFCA1A500C3D002D70E9 /* IngressMedalsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C46EFB11A500C3C002D70E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C75475F1A5DABB5004749A0 /* locked@2x.png in Resources */,
+				2C46EFC11A500C3C002D70E9 /* Main.storyboard in Resources */,
+				2C6FE43F1A5DBA78006E352A /* IMMedalView.xib in Resources */,
+				2C46EFC61A500C3C002D70E9 /* LaunchScreen.xib in Resources */,
+				2C75475B1A5D9A1F004749A0 /* background@2x.png in Resources */,
+				2C46EFC31A500C3C002D70E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C46EFC91A500C3D002D70E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B90274A8997936E334227BB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IngressMedals/Pods-IngressMedals-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C46EFDB1A55430C002D70E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		CAD8247ED89171E73A2EF968 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C46EFAF1A500C3C002D70E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6FE43D1A5DBA6C006E352A /* IMMedalView.swift in Sources */,
+				2C4C43771A5A9A1F006A676A /* IMObjectiveViewController.swift in Sources */,
+				2C32474C1A58E4BA00760A35 /* IMObjectiveListViewController.swift in Sources */,
+				2C4C437F1A5A9B80006A676A /* UIViewController+WCAdditions.m in Sources */,
+				2C3247471A58E47E00760A35 /* _IMData.swift in Sources */,
+				2CDB48C11A58EDCA0095A147 /* _IMMedal.swift in Sources */,
+				2C6FE4431A5DBB44006E352A /* IMObjectiveBasedViewController.swift in Sources */,
+				2CDB48C21A58EDCA0095A147 /* IMMedal.swift in Sources */,
+				2C6FE4371A5DB560006E352A /* IMAddEventViewController.swift in Sources */,
+				2CDB48BE1A58E8F80095A147 /* IMAddObjectiveViewController.swift in Sources */,
+				2C4C43791A5A9B59006A676A /* UIViewControllerAdditions.swift in Sources */,
+				2CDB48C61A58EF0B0095A147 /* UIColorAdditions.swift in Sources */,
+				2C4C437E1A5A9B80006A676A /* UIStoryboard+WCAdditions.m in Sources */,
+				2CDB48C51A58EF0B0095A147 /* NSObjectAdditions.swift in Sources */,
+				2C4C43751A5932C6006A676A /* UIColor+WCAdditions.m in Sources */,
+				2C6FE4411A5DBAA4006E352A /* IMEventListViewController.swift in Sources */,
+				2C32474A1A58E47E00760A35 /* IMObjective.swift in Sources */,
+				2C3247481A58E47E00760A35 /* _IMObjective.swift in Sources */,
+				2CDB48C81A592B430095A147 /* NSManagedObjectAdditions.swift in Sources */,
+				2C6FE4451A5DC278006E352A /* UIViewAdditions.swift in Sources */,
+				2C6FE43A1A5DB8BB006E352A /* _IMEvent.swift in Sources */,
+				2C46EFB91A500C3C002D70E9 /* AppDelegate.swift in Sources */,
+				2C3247491A58E47E00760A35 /* IMData.swift in Sources */,
+				2C6FE43B1A5DB8BB006E352A /* IMEvent.swift in Sources */,
+				2C3247421A58E45F00760A35 /* IngressMedals.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C46EFC71A500C3D002D70E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C46EFD21A500C3D002D70E9 /* IngressMedalsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C46EFCD1A500C3D002D70E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C46EFB21A500C3C002D70E9 /* IngressMedals */;
+			targetProxy = 2C46EFCC1A500C3D002D70E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C46EFBF1A500C3C002D70E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C46EFC01A500C3C002D70E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C46EFC41A500C3C002D70E9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C46EFC51A500C3C002D70E9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C46EFD31A500C3D002D70E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C46EFD41A500C3D002D70E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C46EFD61A500C3D002D70E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B37ECA94332623EF31A630 /* Pods-IngressMedals.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IngressMedals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IngressMedals/Utilities/Legacy/IngressMedals-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C46EFD71A500C3D002D70E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DFC4D77817F9A1142CBADB /* Pods-IngressMedals.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IngressMedals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IngressMedals/Utilities/Legacy/IngressMedals-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2C46EFD91A500C3D002D70E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IngressMedalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IngressMedals.app/IngressMedals";
+			};
+			name = Debug;
+		};
+		2C46EFDA1A500C3D002D70E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IngressMedalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IngressMedals.app/IngressMedals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C46EFAE1A500C3C002D70E9 /* Build configuration list for PBXProject "IngressMedals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C46EFD31A500C3D002D70E9 /* Debug */,
+				2C46EFD41A500C3D002D70E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C46EFD51A500C3D002D70E9 /* Build configuration list for PBXNativeTarget "IngressMedals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C46EFD61A500C3D002D70E9 /* Debug */,
+				2C46EFD71A500C3D002D70E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C46EFD81A500C3D002D70E9 /* Build configuration list for PBXNativeTarget "IngressMedalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C46EFD91A500C3D002D70E9 /* Debug */,
+				2C46EFDA1A500C3D002D70E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C32473D1A58E45F00760A35 /* IngressMedals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C32473E1A58E45F00760A35 /* IngressMedals.xcdatamodel */,
+			);
+			currentVersion = 2C32473E1A58E45F00760A35 /* IngressMedals.xcdatamodel */;
+			path = IngressMedals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C46EFAB1A500C3C002D70E9 /* Project object */;
+}
