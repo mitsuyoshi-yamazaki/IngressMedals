@@ -12,6 +12,12 @@ class IMObjectiveViewController: IMObjectiveBasedViewController, NSFetchedResult
 
 	@IBOutlet weak private var progressLabel: UILabel!
 	
+	@IBOutlet weak private var copperMedalContainer: IMMedalContainerView!
+	@IBOutlet weak private var silverMedalContainer: IMMedalContainerView!
+	@IBOutlet weak private var goldMedalContainer: IMMedalContainerView!
+	@IBOutlet weak private var platinumMedalContainer: IMMedalContainerView!
+	@IBOutlet weak private var onyxMedalContainer: IMMedalContainerView!
+	
 	private var fetchedResultsController: NSFetchedResultsController!
 	
 	override func viewDidLoad() {
@@ -53,6 +59,25 @@ class IMObjectiveViewController: IMObjectiveBasedViewController, NSFetchedResult
 	private func updateInterfaces() {
 		
 		self.progressLabel.text = "Progress: \(self.objective.progress!)"
+		
+		let medalViewList: [IMMedalView] = [
+			self.copperMedalContainer.medalView,
+			self.silverMedalContainer.medalView,
+			self.goldMedalContainer.medalView,
+			self.platinumMedalContainer.medalView,
+			self.onyxMedalContainer.medalView,
+		]
+		let sortedMedals = self.objective.sortedMedals
+		let startIndex = IMMedalType.Copper.rawValue
+		let currentMedalIndex = self.objective.medalType.rawValue
+		
+		for (index, medalView) in enumerate(medalViewList) {
+			
+			let medal = sortedMedals[index + startIndex]
+			medalView.setMedalType(medal.medalType, text: "\(medal.progress!)")
+			
+			medalView.lockView.hidden = (medal.medalType.rawValue < currentMedalIndex)
+		}
 	}
 	
 	// MARK: - <UITableViewDelegate>

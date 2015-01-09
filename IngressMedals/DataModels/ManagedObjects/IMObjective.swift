@@ -23,6 +23,12 @@ class IMObjective: _IMObjective {
 		}
 	}
 	
+	internal var sortedMedals: [IMMedal] {
+		get {
+			return self.medals.sortedArrayUsingDescriptors([NSSortDescriptor(key: "type", ascending: true)]) as [IMMedal]
+		}
+	}
+	
 	override class func createData() -> IMObjective {
 		
 		let objective = superclass()!.createData() as IMObjective

@@ -8,6 +8,25 @@
 
 import UIKit
 
+/// IB上でIMMedalViewを配置したい時に使うコンテナ
+class IMMedalContainerView: UIView {
+	
+	internal var medalView: IMMedalView!
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+		self.backgroundColor = UIColor.clearColor()
+		
+		self.medalView = IMMedalView.instantiateFromNib() as IMMedalView
+		
+		self.medalView.frame = self.bounds
+		self.medalView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+		
+		self.addSubview(self.medalView)
+	}
+}
+
 class IMMedalView: UIView {
 
 	@IBOutlet internal var titleLabel: UILabel!
@@ -73,21 +92,20 @@ class IMMedalView: UIView {
 		
 		let medalType = objective.medalType
 		
-		self.setMedalType(medalType)
+		self.setMedalType(medalType, text: objective.title!)
 		
-		self.titleLabel.text = objective.title
 		self.lockView.hidden = (medalType != IMMedalType.NotStarted)
 	}
 	
 	internal func setEvent(event: IMEvent) {
 		
-		self.setMedalType(event.medalType)
-		self.titleLabel.text = "\(event.progress!)"
+		self.setMedalType(event.medalType, text: "\(event.progress!)")
 		self.lockView.hidden = true
 	}
 	
-	internal func setMedalType(medalType: IMMedalType) {
+	internal func setMedalType(medalType: IMMedalType, text: String = "") {
 		
+		self.titleLabel.text = text
 		self.backgroundColor = medalType.backgroundColor()
 		self.setBorderWithColor(medalType.borderColor(), width: 4.0)
 	}
