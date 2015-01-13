@@ -14,6 +14,7 @@ pod 'Parse', '~> 1.6.1'
 # 試してみる
 pod 'CCHexagonFlowLayout', '~> 1.0.2'
 pod 'TKRSegueOptions', '~> 0.1.2'
+pod 'MBPullDownController', '~> 1.1.1'
 
 end
 
